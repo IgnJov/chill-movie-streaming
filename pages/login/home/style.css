@@ -1,0 +1,147 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+body {
+	height: 100vh;
+	width: 100vw;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-image: url("../../../assets/login-background-img.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.container {
+	width: 306px;
+	border-radius: 8px;
+	padding: 24px;
+
+	display: flex;
+	justify-content: center;
+
+	background-color: #181a1c;
+	background-color: rgba(24, 26, 28, 0.84);
+
+	color: white;
+	font-family: "Lato", sans-serif;
+}
+
+form {
+	width: 100%;
+}
+
+.form-header {
+	text-align: center;
+}
+
+.form-header img {
+	margin-bottom: 24px;
+}
+
+.form-header h1 {
+	font-weight: 700;
+	font-size: 18px;
+	margin-bottom: 4.62px;
+}
+
+.form-header p {
+	font-weight: 400;
+	font-size: 10px;
+}
+
+.input {
+	margin-top: 20px;
+}
+
+.input label {
+	display: block;
+	font: 500 10px "Lato", sans-serif;
+	line-height: 14px;
+	margin-bottom: 3.47px;
+}
+
+.input input {
+	width: 100%;
+	height: 32px;
+	border-radius: 12px;
+	border-color: rgba(231, 227, 252, 0.23);
+	background-color: transparent;
+	color: white;
+	font-family: "Lato", sans-serif;
+	font-size: 9.24px;
+	line-height: 12.94px;
+	font-weight: 400;
+
+	padding: 8.09px 11.55px 8.09px 11.55px;
+}
+
+.action-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 10px;
+}
+
+.action-container span {
+	font: 400 10px "Lato", sans-serif;
+	color: rgba(193, 194, 196, 1);
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+.button-container {
+	margin-top: 25px;
+	text-align: center;
+	font-size: 10px;
+	line-height: 14px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 4px;
+}
+
+.button-container button {
+	color: white;
+	font-weight: 600;
+	font-size: 10px;
+	line-height: 14px;
+
+	width: 100%;
+	height: 32px;
+	padding: 8.09px 11.55px 8.09px 11.55px;
+	border-radius: 13.86px;
+	border-color: rgba(231, 227, 252, 0.23);
+}
+
+.button-container p{
+	color: rgba(157, 158, 161, 1);
+}
+
+#login-button {
+	background-color: rgba(61, 65, 66, 1);
+}
+
+#google-login-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 12px;
+
+	background-color: transparent;
+}
