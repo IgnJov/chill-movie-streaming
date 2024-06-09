@@ -1,0 +1,372 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.desktop-only {
+	display: none;
+}
+
+img {
+	max-height: 100%;
+	max-width: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+html {
+	overflow: hidden;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	overflow-x: hidden;
+
+	background-color: rgba(24, 26, 28, 1);
+
+	font-family: "Lato", sans-serif;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+
+	height: 56px;
+	padding: 6px 20px 6px 20px;
+}
+
+.profile-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 4px;
+}
+
+#profile-image {
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+}
+
+.menu-container {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+
+	font-weight: 500;
+	font-size: 10px;
+	line-height: 14px;
+}
+
+.menu-container a {
+	color: white;
+}
+
+.featured-container {
+	color: white;
+	padding: 70px 20px 30px 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+
+	background-image: url("../../assets/featured-poster.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.featured-container .button-container {
+	height: 25px;
+}
+
+.featured-container .synopsis-container .synopsis {
+	max-height: 30px;
+	overflow: hidden;
+}
+
+.featured-container .synopsis {
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 16.8px;
+}
+
+.button-container {
+	width: 100%;
+	display: flex;
+}
+
+#mulai-button {
+	width: 55px;
+	height: 25px;
+	background-color: rgba(15, 30, 147, 1);
+	border-radius: 48px;
+	padding: 4px 12px 4px 12px;
+	border: 0;
+	color: white;
+
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 16.8px;
+}
+
+#selengkapnya-button {
+	padding: 4px 12px 4px 12px;
+	border-radius: 48px;
+	border: 0;
+	background-color: rgba(34, 40, 42, 1);
+	color: white;
+
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 16.8px;
+}
+
+#mute-button {
+	margin-left: auto;
+}
+
+.continue-watching-container {
+	padding: 20px;
+	color: white;
+}
+
+.continue-watching-container h2 {
+	color: white;
+	font-size: 20px;
+	line-height: 24px;
+	margin-bottom: 20px;
+}
+
+.continue-watching-container .watch-list-container {
+	width: 1200px;
+	display: flex;
+	gap: 20px;
+}
+
+.continue-watching-container .watch-list-card {
+	width: 309px;
+	height: 151px;
+	border-radius: 8px;
+	padding: 20px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.watch-list-card:nth-child(2) {
+	background-image: url("../../assets/dont-look-down-poster.png");
+}
+
+.watch-list-card:nth-child(3) {
+	background-image: url("../../assets/the-batman-poster.png");
+}
+
+.watch-list-card:nth-child(4) {
+	background-image: url("../../assets/the-batman-poster.png");
+}
+
+.watch-list-card:nth-child(5) {
+	background-image: url("../../assets/the-batman-poster.png");
+}
+
+.popular-container {
+	padding: 0 20px 20px 20px;
+	color: white;
+}
+
+.popular-container h2 {
+	margin-bottom: 20px;
+	font-size: 20px;
+	line-height: 24px;
+}
+
+.popular-card {
+	width: 95px;
+	height: 145px;
+}
+
+.popular-card-list {
+	display: flex;
+	gap: 16px;
+	width: 1200px;
+}
+
+footer {
+	padding: 20px;
+
+	color: white;
+}
+
+.brand img {
+	margin-bottom: 20px;
+}
+
+.genre,
+.bantuan {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.genre {
+	margin-top: 40px;
+}
+
+.bantuan {
+	margin-top: 8px;
+}
+
+@media screen and (min-width: 720px) {
+	.right-arrow {
+		position: absolute;
+		right: 30px;
+		top: 50%;
+
+		padding: 10px;
+		border-radius: 50%;
+		background-color: rgba(47, 51, 52, 1);
+	}
+
+	.left-arrow {
+		position: absolute;
+		left: 30px;
+		top: 50%;
+
+		padding: 10px;
+		border-radius: 50%;
+		background-color: rgba(47, 51, 52, 1);
+	}
+
+	section {
+		position: relative;
+	}
+
+	.desktop-only {
+		display: initial;
+	}
+
+	.mobile-only {
+		display: none;
+	}
+
+	nav {
+		padding: 0 50px;
+	}
+
+	#profile-image {
+		border-radius: 50%;
+		width: 40px;
+		height: 40px;
+	}
+
+	.menu-container {
+		display: flex;
+		align-items: center;
+		gap: 80px;
+
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 25.2px;
+	}
+
+	.featured-container {
+		width: 100%;
+		height: 80vh;
+		padding: 0 50px 50px;
+
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	.featured-container h2 {
+		font-size: 48px;
+		font-weight: 700;
+	}
+
+	#mulai-button {
+		height: 100%;
+		width: 93px;
+	}
+
+	.featured-container .button-container {
+		height: auto;
+		gap: 10px;
+	}
+
+	.featured-container .synopsis-container .synopsis {
+		overflow: visible;
+		width: 600px;
+		margin-bottom: 20px;
+
+		max-height: fit-content;
+
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 25.2px;
+	}
+
+	.continue-watching-container {
+		padding-left: 50px;
+		padding-right: 50px;
+		padding-bottom: 50px;
+	}
+
+	.popular-container {
+		padding: 0 50px 50px;
+	}
+
+	.popular-card {
+		width: 234px;
+		height: 365px;
+	}
+
+	.popular-card-list {
+		display: flex;
+		gap: 16px;
+		width: 1200px;
+	}
+
+	footer {
+		display: flex;
+		justify-content: space-between;
+		align-items: start;
+
+		padding: 80px 50px;
+	}
+
+	.genre,
+	.bantuan {
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.genre-container {
+		display: flex;
+		margin-top: 13px;
+	}
+
+	ul,
+	li {
+		list-style: none;
+		color: rgba(193, 194, 196, 1);
+	}
+
+	ul {
+		margin-right: 20px;
+	}
+
+	li {
+		margin-bottom: 13px;
+	}
+}
