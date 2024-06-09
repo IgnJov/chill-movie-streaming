@@ -359,8 +359,11 @@ footer {
 	ul,
 	li {
 		list-style: none;
-		color: rgba(193, 194, 196, 1);
 	}
+
+    li a{
+        color: rgba(193, 194, 196, 1);
+    }
 
 	ul {
 		margin-right: 20px;
